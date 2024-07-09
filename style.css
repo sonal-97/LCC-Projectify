@@ -1,0 +1,400 @@
+*{
+    border: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    max-height: 90px;
+    background-color: white;
+    top: 0;
+}
+
+
+.navbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a:hover {
+    transform: translateY(-6px);
+    transition-duration: 300ms;
+}
+
+.dropdown {
+    overflow: hidden;
+    float: left;
+}
+
+.dropdown .dropbtn,
+.menu button {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 10px;
+    border: 1px transparent;
+    border-radius: 5%;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    height: fit-content;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.best-sellers {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 60px 10px;
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.info {
+    width: 35%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+}
+
+.picture {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture img {
+    width: 100%;
+    max-width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Saira Stencil One", sans-serif;
+    width: 15%;
+}
+
+.logo a {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    max-width: 100px;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.logo img {
+    max-width: 70px;
+    margin: 5px;
+}
+
+.empty-space {
+    width: 20px;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #ddaa00; */
+    align-items: center;
+}
+
+.up {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.social-media-links {
+    margin-top: 5px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-media-links a {
+    padding: 10px;
+    margin: 10px;
+}
+
+.social-media-links a :hover {
+    transform: translateY(-9px);
+    transition-duration: 200ms;
+}
+
+
+.ownership {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slides {
+    display: none;
+}
+
+.slider .slides.active {
+    display: block;
+}
+
+.prevNext .keys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    flex-direction: row;
+}
+
+.prevNext span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 2em;
+    color: #000;
+}
+
+.prevNext span:nth-child(2) {
+    margin-right: 20px;
+}
+
+.reachout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    line-height: 5;
+    font-family: "Poppins";
+    font-weight: 500;
+    border-left: 1px solid black;
+    padding: 0px 50px;
+}
+
+.feedback input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5%;
+}
+
+.feedback textarea {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.feedback button {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20%;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: small;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.list a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-decoration: underline;
+}
+
+table {
+    width: 350px;
+
+}
+
+.img {
+    height: 200px;
+    width: 280px;
+    background-size: cover;
+}
+
+
+.food section {
+    border: 2px solid black;
+    width: 350px;
+    margin: 10px auto 15px auto;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 8px gray;
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.food h3 {
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+
+.food .block {
+    display: flex;
+    padding: 10px;
+}
+
+.food section:hover {
+    transform: translateY(-10px);
+    transition-duration: 300ms;
+    box-shadow: 5px 5px 6px;
+}
+
+.food h3 {
+    text-align: center;
+}
+
+.food table {
+    border-collapse: collapse;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.food ::-webkit-scrollbar {
+    color: white;
+}
+
+.food {
+    display: none;
+}
+
+.food.active {
+    display: block;
+}
+
+.list a.active {
+    background-color: black;
+    color: white;
+}
+
+
+.menu table td{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
